@@ -1,22 +1,27 @@
+# Projeto de Encriptação e Assinatura Digital com RSA 🔒✍️
 
-### Explicação do README:
+Este projeto implementa a encriptação e assinatura digital utilizando o algoritmo RSA. Ele permite gerar chaves públicas e privadas, encriptar uma mensagem, assinar digitalmente a mensagem encriptada com a chave privada e verificar a assinatura com a chave pública.
 
-- **Título e Descrição**: O título do projeto está no topo, seguido por uma breve descrição do que o projeto faz.
-- **Funcionalidades**: Explica as principais funções do projeto, como a geração de chaves, encriptação e assinatura.
-- **Estrutura do Projeto**: Descreve a organização dos arquivos do projeto.
-- **Como Usar**: Fornece instruções passo a passo para rodar os scripts.
-- **Dependências**: Instruções para instalar a biblioteca necessária (`cryptography`).
-- **Como Funciona**: Explica o funcionamento geral do fluxo de encriptação e assinatura digital.
-- **Contribuições**: Incentiva contribuições e melhorias no projeto.
-- **Licença**: A licença MIT é sugerida como padrão, mas você pode personalizar conforme necessário.
+## Funcionalidades 🛠️
 
----
+1. **Geração de Chaves RSA** 🔑: Gera uma chave pública e uma chave privada para uso na encriptação e assinatura digital.
+2. **Encriptação de Mensagem** 🔐: Encripta uma mensagem usando a chave pública.
+3. **Assinatura Digital** ✍️: Assina a mensagem encriptada com a chave privada.
+4. **Desencriptação de Mensagem** 🔓: Desencripta a mensagem usando a chave privada.
+5. **Verificação de Assinatura** ✅: Verifica a assinatura digital usando a chave pública.
 
-### Como Colocar no GitHub:
+## Estrutura do Projeto 📁
 
-1. **Crie um repositório** no GitHub.
-2. **Adicione os arquivos** do projeto ao repositório.
-3. **Crie um arquivo `README.md`** no repositório com o conteúdo acima.
-4. **Faça o commit** e envie para o GitHub.
+- `gerar_chaves.py`: Gera e salva as chaves RSA (pública e privada).
+- `encriptar_mensagem.py`: Encripta uma mensagem e gera a assinatura digital com a chave privada.
+- `desencriptar_mensagem.py`: Desencripta a mensagem e verifica a assinatura digital usando a chave pública.
+- `mensagem.txt`: Arquivo de exemplo com uma mensagem a ser encriptada e assinada.
 
-Se precisar de mais ajuda com o GitHub ou com outra parte do projeto, é só avisar!
+## Como Usar 🚀
+
+### 1. Geração das Chaves RSA 🔑
+Execute o script `gerar_chaves.py` para gerar as chaves públicas e privadas. Isso criará dois arquivos: `private_key.pem` e `public_key.pem`.
+
+```bash
+python gerar_chaves.py
+
